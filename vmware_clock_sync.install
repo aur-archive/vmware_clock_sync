@@ -1,0 +1,32 @@
+## arg 1:  the new package version
+pre_install() {
+    :
+}
+
+## arg 1:  the new package version
+post_install() {
+    echo "To enable the service at boot, run: systemctl enable vmware_clock_sync"
+    echo "To start the service, run: systemctl start vmware_clock_sync"
+}
+
+## arg 1:  the new package version
+## arg 2:  the old package version
+pre_upgrade() {
+    :
+}
+
+## arg 1:  the new package version
+## arg 2:  the old package version
+post_upgrade() {
+    :
+}
+
+## arg 1:  the old package version
+pre_remove() {
+    :
+}
+
+## arg 1:  the old package version
+post_remove() {
+    :
+}
